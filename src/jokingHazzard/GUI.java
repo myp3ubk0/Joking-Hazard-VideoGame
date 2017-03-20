@@ -1,19 +1,25 @@
 package jokingHazzard;
 
-import javax.swing.JFrame;
-
-import com.sun.glass.ui.Screen;
+import javax.swing.*; // РёРјРїРѕСЂС‚РёСЂСѓРµРј SWING
+import java.awt.*; // РёРјРїРѕСЂС‚РёСЂСѓРµРј РІСЃРµ РїРѕРґРїР°РєРµС‚С‹ AWT
 
 public class GUI {
 
 	public static void main(String[] args) {
-		JFrame.setDefaultLookAndFeelDecorated(false); //  устанавливае стандартный внешний вид
-        JFrame frame = new JFrame("Здесь заголовок окна"); // желаемый заголовок        
-        // задаём операцию, которая выполниться при закрытии
+        JFrame.setDefaultLookAndFeelDecorated(false); //  СѓСЃС‚Р°РЅР°РІР»РёРІР°Рµ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ РІРЅРµС€РЅРёР№ РІРёРґ
+        JFrame frame = new JFrame("Joking Hazzard VideoGame"); // Р¶РµР»Р°РµРјС‹Р№ Р·Р°РіРѕР»РѕРІРѕРє   
+        // Р·Р°РґР°С‘Рј РѕРїРµСЂР°С†РёСЋ, РєРѕС‚РѕСЂР°СЏ РІС‹РїРѕР»РЅРёС‚СЊСЃСЏ РїСЂРё Р·Р°РєСЂС‹С‚РёРё
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 300); // задаём размер окна 
-        frame.setVisible(true); //  форма будет видимой
+        frame.setSize(400, 300); // Р·Р°РґР°С‘Рј СЂР°Р·РјРµСЂ РѕРєРЅР° 
+        frame.setVisible(true); //  С„РѕСЂРјР° Р±СѓРґРµС‚ РІРёРґРёРјРѕР№
         frame.setLocationRelativeTo(null);
+        
+        JLabel blueLabel = new JLabel("Game in maintance!");
+        blueLabel.setLocation(10, 10); /* РЅР°РґРїРёСЃСЊ СЃРёРЅРµРіРѕ С†РІРµС‚Р°*/
+        blueLabel.setSize(300, 100); // СЂР°Р·РјРµСЂ РѕР±Р»Р°СЃС‚Рё РЅР°РґРїРёСЃРё
+        blueLabel.setHorizontalAlignment(0);
+        blueLabel.setForeground(Color.blue); // Р·Р°РґР°С‘Рј С†РІРµС‚ 
+        frame.add(blueLabel); // РґРѕР±Р°РІР»СЏРµРј РЅР° С„РѕСЂРјСѓ СЌС‚Сѓ РЅР°РґРїРёСЃСЊ
 	}
 
 }
